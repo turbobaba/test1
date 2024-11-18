@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album yêu thương</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Album yêu thương</h1>
+        <nav>
+            <a href="index.html">Trang chủ</a>
+            <a href="album.html" class="active">Album</a>
+        </nav>
+    </header>
+    <section class="album">
+        <img src="4.jpg" alt="Hình 1" onclick="openModal(this.src)">
+        <img src="3.jpg" alt="Hình 2" onclick="openModal(this.src)">
+        <img src="2.jpg" alt="Hình 3" onclick="openModal(this.src)">
+        <img src="1.jpg" alt="Hình 4" onclick="openModal(this.src)">
+    </section>
+    <div class="modal" id="imageModal">
+        <span onclick="closeModal()">&times;</span>
+        <img id="modalImage" src="" alt="Hình lớn">
+    </div>
+    <footer>
+        <p>by Andy</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
